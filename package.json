@@ -1,0 +1,39 @@
+{
+  "name": "@shellpaycli/solana",
+  "version": "1.0.0",
+  "description": "ShellPayCli - Interactive AI-powered Solana wallet assistant for the terminal",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "shellpay": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "solana",
+    "wallet",
+    "cli",
+    "openai",
+    "web3",
+    "crypto"
+  ],
+  "author": "ShellPayCli",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "sql.js": "^1.12.0",
+    "bs58": "^5.0.0",
+    "openai": "^4.52.7",
+    "readline": "^1.3.0",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/sql.js": "^1.4.9",
+    "@types/bs58": "^4.0.4",
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3"
+  }
+}
